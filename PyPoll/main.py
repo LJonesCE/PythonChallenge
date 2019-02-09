@@ -12,7 +12,7 @@ vote_count = []
 vote_percent = []
 
 #Open the csv
-csvpath = os.path.join('election_data.csv')
+csvpath = os.path.join('..','resources','election_data.csv')
 
 
 #Create the lists to store data.
