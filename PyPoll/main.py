@@ -4,13 +4,6 @@ import os
 #Module for reading csv file
 import csv
 
-#Create the lists to store data.
-count = 0
-candidatelist = []
-unique_candidate = []
-vote_count = []
-vote_percent = []
-
 #Open the csv
 csvpath = os.path.join('..','election_data.csv')
 
@@ -109,46 +102,5 @@ with open('election_results.txt', 'w') as text:
 
     text.write("---------------------------------------\n")
 
-=======
-#Import os module to create file path across operating systems
-import os
-
-#Module for reading csv file
-import csv
-
-#Create the lists to store data.
-count = 0
-candidatelist = []
-unique_candidate = []
-vote_count = []
-vote_percent = []
-
-#Open the csv
-csvpath = os.path.join('..','election_data.csv')
-
-
-#Create the lists to store data.
-count = 0
-candidatelist = []
-unique_candidate = []
-vote_count = []
-vote_percent = []
-
-
-#Reading using csv module
-with open(csvpath, newline="") as csvfile:
-
-    csvreader = csv.reader(csvfile, delimiter=",")
-
-    csv_header = next(csvreader)
-
-    #Conduct ask
-    for row in csvreader:
-
-        # Count the total number of votes
-        count = count + 1
-
-        # Set the candidate names to candidatelist
-
-        candidatelist.append(row[2])
+     
 
